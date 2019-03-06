@@ -1,0 +1,15 @@
+server:
+  port: 8091
+
+regCenter:
+  serverList: localhost:2181
+  namespace: elastic-job-lite-springboot
+
+simpleJob:
+  cron: 0/10 * * * * ?
+  shardingTotalCount: 1
+  shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
+
+spring:
+  profiles:
+    active: dev
